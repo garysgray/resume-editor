@@ -158,3 +158,114 @@ body {
   border-color: #f87171;
   font-weight: 600;
 }
+
+/* ---------- Intro pitch above the editor ---------- */
+.intro {
+  max-width: 720px;
+  margin: 8px auto 18px;
+  text-align: center;
+}
+
+.intro-title {
+  margin: 0 0 10px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #1d2129;
+}
+
+.intro-points {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 0;
+}
+
+.intro-points span {
+  padding: 4px 10px;
+  font-size: 13px;
+  color: #1d4ed8;
+  background: #e8efff;
+  border-radius: 999px;
+}
+
+@media (max-width: 600px) {
+  .intro-title {
+    font-size: 18px;
+  }
+}
+
+/* ---------- "What it can and can't do" note ---------- */
+.limits {
+  max-width: 520px;
+  margin: 14px auto 0;
+  text-align: left;
+  font-size: 14px;
+  color: #3a404b;
+}
+
+.limits summary {
+  cursor: pointer;
+  text-align: center;
+  color: #2563eb;
+  font-size: 13px;
+}
+
+.limits summary:hover {
+  text-decoration: underline;
+}
+
+.limits-body {
+  margin-top: 10px;
+  padding: 12px 16px;
+  background: #ffffff;
+  border: 1px solid #d5d9e0;
+  border-radius: 8px;
+}
+
+.limits-heading {
+  margin: 6px 0 4px;
+  font-weight: 600;
+  color: #1d2129;
+}
+
+.limits ul {
+  margin: 0 0 8px;
+  padding-left: 20px;
+}
+
+.limits li {
+  margin: 2px 0;
+}
+
+.limits-note {
+  margin: 8px 0 0;
+  font-size: 13px;
+  color: #555d6b;
+}
+
+/* ---------- Feedback links ---------- */
+.download-feedback {
+  max-width: 560px;
+  margin: -6px auto 16px;
+  padding: 8px 14px;
+  text-align: center;
+  font-size: 14px;
+  color: #1d2129;
+  background: #ecfdf3;
+  border: 1px solid #a6e3bf;
+  border-radius: 8px;
+}
+
+.download-feedback a,
+.limits-note a,
+.site-footer a {
+  color: #2563eb;
+}
+
+.site-footer {
+  padding: 18px 16px 28px;
+  text-align: center;
+  font-size: 13px;
+}

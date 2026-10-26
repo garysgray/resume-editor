@@ -2132,6 +2132,9 @@ async function onDownload() {
     const bytes = await savePdf();
     downloadBytes(bytes, makeOutputName(state.fileName));
     setStatus('Downloaded.');
+    // Ask for feedback right after a download, when people know whether it worked
+    const feedbackEl = document.getElementById('downloadFeedback');
+    if (feedbackEl) feedbackEl.hidden = false;
   } catch (err) {
     console.error(err);
     setStatus('Could not save the PDF.', true);

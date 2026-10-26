@@ -21,9 +21,47 @@
   </header>
 
   <main class="workspace">
-    <p class="status" id="status">Open a PDF to start. Your file never leaves your computer.</p>
+    <section class="intro">
+      <h2 class="intro-title">Fix a date, title or typo in your PDF resume without breaking format.</h2>
+      <p class="intro-points">
+        <span>Free</span>
+        <span>No sign-up</span>
+        <span>Your file never leaves your computer</span>
+      </p>
+
+      <details class="limits">
+        <summary>What it can and can't do</summary>
+        <div class="limits-body">
+          <p class="limits-heading">Works great for</p>
+          <ul>
+            <li>Changing dates, job titles, phone numbers, emails and skills</li>
+            <li>Fixing typos and rewording a line</li>
+            <li>Making text shorter, or a little longer if there's room on the line</li>
+          </ul>
+          <p class="limits-heading">Can't do (yet)</p>
+          <ul>
+            <li>Add or remove lines, bullets or sections</li>
+            <li>Wrap text onto a new line, or grow boxes and tags to fit longer text</li>
+            <li>Edit scanned resumes (pictures of text)</li>
+          </ul>
+          <p class="limits-note">If an edit can't be done cleanly, the editor tells you and leaves your file untouched.</p>
+          <p class="limits-note">Something not working on your resume? <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXP7YzwgwTx_KYEBmNQzWuHYfKn51vk8h7HvkaIEr2tSY8KA/viewform" target="_blank" rel="noopener">Send feedback</a>.</p>
+        </div>
+      </details>
+    </section>
+
+    <p class="status" id="status">Open a PDF or drop one here to start.</p>
+
+    <!-- Shown after a download, when people know whether it worked -->
+    <p class="download-feedback" id="downloadFeedback" hidden>
+      Did it work? <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXP7YzwgwTx_KYEBmNQzWuHYfKn51vk8h7HvkaIEr2tSY8KA/viewform" target="_blank" rel="noopener">Tell me in a quick 1-minute form</a>. It helps me fix things.
+    </p>
     <div class="pages" id="pages"></div>
   </main>
+
+  <footer class="site-footer">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXP7YzwgwTx_KYEBmNQzWuHYfKn51vk8h7HvkaIEr2tSY8KA/viewform" target="_blank" rel="noopener">Send feedback</a>
+  </footer>
 
   <!-- Allowed libraries only: pdf.js, pdf-lib, fontkit -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
@@ -31,5 +69,9 @@
   <script src="https://unpkg.com/@pdf-lib/fontkit@1.1.1/dist/fontkit.umd.min.js"></script>
 
   <script src="app.js"></script>
+
+  <!-- GoatCounter: privacy-friendly visit counter (no cookies, never sees files). Dashboard: https://resumeeditor.goatcounter.com -->
+  <script data-goatcounter="https://resumeeditor.goatcounter.com/count"
+          async src="https://gc.zgo.at/count.js"></script>
 </body>
 </html>
