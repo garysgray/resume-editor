@@ -1,0 +1,2 @@
+Latin Modern fonts (c) GUST e-foundry, GUST Font License (LPPL-based). Converted from OpenType CFF to TrueType and trimmed to common characters for use in this editor.
+https://www.gust.org.pl/projects/e-foundry/latin-modern

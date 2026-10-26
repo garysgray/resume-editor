@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF Resume Editor</title>
+  <meta name="description" content="In-browser PDF resume text editor to quickly edit dates, titles, and details while preserving formatting.">
+  <meta property="og:title" content="PDF Resume Editor">
+  <meta property="og:description" content="In-browser PDF resume text editor to quickly edit dates, titles, and details while preserving formatting.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1 class="title">PDF Resume Editor</h1>
+    <div class="actions">
+      <label class="btn" for="fileInput">Open PDF</label>
+      <input type="file" id="fileInput" accept="application/pdf" hidden>
+      <button class="btn" id="undoBtn" disabled>Undo</button>
+      <button class="btn btn-primary" id="downloadBtn" disabled>Download PDF</button>
+    </div>
+  </header>
+
+  <main class="workspace">
+    <p class="status" id="status">Open a PDF to start. Your file never leaves your computer.</p>
+    <div class="pages" id="pages"></div>
+  </main>
+
+  <!-- Allowed libraries only: pdf.js, pdf-lib, fontkit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+  <script src="https://unpkg.com/@pdf-lib/fontkit@1.1.1/dist/fontkit.umd.min.js"></script>
+
+  <script src="app.js"></script>
+</body>
+</html>

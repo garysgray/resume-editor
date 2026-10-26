@@ -1,0 +1,28 @@
+# --- Private files: never publish ---
+# Resumes and test PDFs (your real resume would be public on GitHub)
+*.pdf
+
+# Your planning notes and test lists (delete this line if you want them public)
+stuff/
+
+# --- Leftovers the editor doesn't use ---
+# Old font files (the editor loads fonts/*.js now)
+*.ttf
+*.otf
+
+# Zipped copies of the project
+*.zip
+
+# --- System and editor clutter ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*~
+
+# --- Logs and temp files ---
+*.log
+*.tmp
+node_modules/
