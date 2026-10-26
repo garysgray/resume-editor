@@ -268,4 +268,9 @@ body {
   padding: 18px 16px 28px;
   text-align: center;
   font-size: 13px;
+  color: #6b7280;
+}
+
+.footer-sep {
+  margin: 0 8px;
 }
